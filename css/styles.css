@@ -1,24 +1,19 @@
-/* css/styles.css - updated to match requested gradients & layout */
-
-/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body / base */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  color: #ab7eff;
+  color: #fff;
   background-color: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
 }
 
-/* NAVBAR (use in header/base template) */
 .navbar {
   background: linear-gradient(165deg, #6a49a7 0%, #a861b0 100%);
   padding: 0.9rem 0;
@@ -65,7 +60,6 @@ body {
   opacity: 0.85;
 }
 
-/* Main content wrapper (use in base.html around page content) */
 .main-content {
   min-height: calc(100vh - 140px);
   padding: 2rem;
@@ -73,7 +67,6 @@ body {
   margin: 0 auto;
 }
 
-/* HERO SECTION (index.html -- top) */
 .hero-section {
   text-align: center;
   padding: 3.25rem 1.25rem;
@@ -98,7 +91,6 @@ body {
   opacity: 0.95;
 }
 
-/* Page heading (use in index/about/work above lists) */
 .page-heading {
   text-align: center;
   margin: 1.5rem 0 2rem;
@@ -118,13 +110,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-/* TABLE-LIKE LIST (use on index listing or projects list)
-   Note: for the portfolio we keep project cards but use similar visuals */
 .podcast-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1.5rem;
-  /* fallback solid color behind gradient area */
   background: linear-gradient(165deg, #6a49a7 0%, #a861b0 100%);
   border-radius: 10px;
   overflow: hidden;
@@ -133,7 +122,6 @@ body {
   padding: 0.25rem;
 }
 
-/* We'll reuse header styling for small table headings if you render a table */
 .podcast-table thead {
   background: linear-gradient(165deg, #6a49a7 0%, #a861b0 100%);
   color: white;
@@ -152,7 +140,6 @@ body {
   background: rgba(255,255,255,0.95);
 }
 
-/* hover row */
 .podcast-table tbody tr {
   transition: background-color 0.2s ease;
 }
@@ -160,7 +147,6 @@ body {
   background-color: #f9f5ff;
 }
 
-/* links inside table/list */
 .podcast-table a {
   color: #6a49a7;
   text-decoration: none;
@@ -172,7 +158,6 @@ body {
   text-decoration: underline;
 }
 
-/* DETAIL / CARD (use in project detail or about blocks) */
 .podcast-detail {
   background: linear-gradient(165deg, #6a49a7 0%, #a861b0 100%);
   border-radius: 10px;
@@ -204,7 +189,6 @@ body {
   margin: 1.5rem 0;
 }
 
-/* Back link */
 .back-link {
   display: inline-block;
   margin-top: 1rem;
@@ -214,10 +198,9 @@ body {
   transition: color 0.2s ease;
 }
 .back-link:hover {
-  color: #a861b0;
+  color: #ffffff;
 }
 
-/* Category tag (use wherever you display category/skill badges) */
 .category-tag {
   display: inline-block;
   padding: 0.35rem 0.7rem;
@@ -228,4 +211,3 @@ body {
   font-weight: 600;
 }
 
-/

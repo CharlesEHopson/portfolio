@@ -1,61 +1,112 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>About — Charles Hopson</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <title>About — Charles Hopson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand"><a href="index.html" class="brand-link">Biography</a></h1>
-      <nav class="main-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="work.html">Work</a>
-      </nav>
-    </div>
-  </header>
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html" style="color:inherit; text-decoration:none;">Charles Hopson</a></div>
+            <nav>
+                <ul class="nav-menu" aria-label="Main navigation">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="work.html">Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main class="container">
-    <section class="hero-section">
-      <h2>About Me</h2>
-      <p>I'm a software developer with experience building and adjusting code using Ruby on Rails, moderate JavaScript, but a lot more experience with Python. I am a task-oriented person and am able to function at my peak with a concrete goal in mind.</p>
+    <main class="main-content">
 
-      <h3>Technical Skills</h3>
-      <ul class="skills">
-        <li>Ruby / Ruby on Rails</li>
-        <li>Python</li>
-        <li>JavaScript</li>
-        <li>HTML</li>
-        <li>C / C++</li>
-        <li>SQL / PostgreSQL</li>
-        <li>Git</li>
-        <li>CSS</li>
-      </ul>
+        <section class="hero-section" aria-labelledby="about-hero-heading">
+            <h1 id="about-hero-heading">About Me</h1>
+            <p class="intro-text">
+                I'm a software developer with experience building and adjusting code using Ruby on Rails,
+                moderate JavaScript, but a lot more experience with Python. I am a task-oriented person and am able to function
+                at my peak with a concrete goal in mind.
+            </p>
+        </section>
 
-      <h3>Education</h3>
-      <ul class="education">
-        <li><strong>Associate of Science</strong>, Southwest Community College — 2019</li>
-        <li><strong>B.S. Computer Science</strong>, University of Memphis — 2026</li>
-      </ul>
+        <section aria-label="Profile and details" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.25rem;">
 
-      <h3>Experience & Achievements</h3>
-      <ul class="achievements">
-        <li>Built and deployed an AI chatbot made to streamline university-level Student Advisory.</li>
-        <li>Shadowed a corporate international team to understand and study front-end development.</li>
-        <li>Researching, gathering, and testing data used to teach AI to produce an expected output given thousands of prompts to a PMS (Prompt Management System) Library.</li>
-      </ul>
+            <aside class="podcast-detail" aria-labelledby="profile-heading">
+                <h2 id="profile-heading">Profile</h2>
 
-      <p><a href="index.html" class="btn btn-secondary">Back to Home</a></p>
-    </section>
-  </main>
+                <p><strong>Name:</strong> Charles Hopson</p>
+                <p><strong>Headline:</strong> Systems Engineer / Software Developer • HTML, JavaScript, Python</p>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Charles Hopson — This is a Footer</p>
-    </div>
-  </footer>
+                <hr>
+
+                <h3>Contact</h3>
+                <p><strong>Email:</strong> <a href="mailto:chopson1@memphis.edu" style="color:inherit; text-decoration:underline;">chopson1@memphis.edu</a></p>
+                <p><strong>Phone:</strong> (901) 330-1384</p>
+                <p><strong>Location:</strong> Memphis, TN</p>
+
+                <hr>
+
+                <h3>Social</h3>
+                <p>
+                    <a href="https://www.linkedin.com/in/charles-hopson" target="_blank" rel="noopener" style="color:inherit;">LinkedIn</a> &nbsp;|&nbsp;
+                    <a href="https://github.com/CharlesEHopson" target="_blank" rel="noopener" style="color:inherit;">GitHub</a>
+                </p>
+
+                <p style="margin-top:1rem;">
+                    <a class="back-link" href="index.html">← Back to Home</a>
+                </p>
+            </aside>
+
+            <section class="podcast-detail" aria-labelledby="skills-heading">
+                <h2 id="skills-heading">Technical Skills</h2>
+
+                <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-top:0.5rem;">
+                    <span class="category-tag">Ruby / Ruby on Rails</span>
+                    <span class="category-tag">Python</span>
+                    <span class="category-tag">JavaScript</span>
+                    <span class="category-tag">HTML</span>
+                    <span class="category-tag">C / C++</span>
+                    <span class="category-tag">SQL / PostgreSQL</span>
+                    <span class="category-tag">Git</span>
+                    <span class="category-tag">CSS</span>
+                </div>
+
+                <hr style="margin-top:1rem;">
+
+            </section>
+
+            <section class="podcast-detail" aria-labelledby="education-heading">
+                <h2 id="education-heading">Education</h2>
+
+                <dl style="margin-top:0.5rem; line-height:1.45; color:rgba(255,255,255,0.95);">
+                    <dt style="font-weight:700;">Associate of Science</dt>
+                    <dd>Southwest Community College — 2019</dd>
+
+                    <dt style="font-weight:700; margin-top:0.75rem;">B.S. Computer Science</dt>
+                    <dd>University of Memphis — 2026</dd>
+                </dl>
+            </section>
+
+            <section class="podcast-detail" aria-labelledby="achievements-heading">
+                <h2 id="achievements-heading">Experience & Achievements</h2>
+
+                <ul class="achievements" style="margin-top:0.75rem; color:rgba(255,255,255,0.95);">
+                    <li>Built and deployed an AI chatbot made to streamline university-level Student Advisory.</li>
+                    <li>Shadowed a corporate international team to understand and study front-end development.</li>
+                    <li>Researching, gathering, and testing data used to teach AI to produce an expected output given thousands of prompts to a PMS (Prompt Management System) Library.</li>
+                </ul>
+            </section>
+
+        </section> 
+
+    </main>
+
+    <footer class="footer" style="margin-top:1.5rem;">
+            <div class="nav-container" style="justify-content:center;">
+                <p style="color:white;">© 2025 Charles Hopson</p>
+            </div>
+    </footer>
 </body>
 </html>

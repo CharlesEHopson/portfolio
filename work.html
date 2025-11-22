@@ -1,55 +1,65 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Work — Charles Hopson</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <title>Work — Charles Hopson</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand"><a href="index.html" class="brand-link">Biography</a></h1>
-      <nav class="main-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="work.html">Work</a>
-      </nav>
-    </div>
-  </header>
+    <header class="navbar" role="banner">
+            <div class="nav-container">
+                <div class="nav-logo"><a href="index.html" style="color:inherit; text-decoration:none;">Charles Hopson</a></div>
+                <nav aria-label="Primary" role="navigation">
+                        <ul class="nav-menu">
+                            <li><a class="nav-link" href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="about.html">About</a></li>
+                            <li><a class="nav-link" href="work.html">Work</a></li>
+                        </ul>
+                </nav>
+            </div>
+    </header>
 
-  <main class="container">
-    <section class="about-section">
-      <h2>My Projects</h2>
+  <main class="main-content" role="main">
+        <header class="page-heading" aria-labelledby="projects-title">
+            <h1 id="projects-title">My Projects</h1>
+            <p class="meta" style="color:rgba(255,255,255,0.9); margin-top:0.25rem;">Selected projects showcasing backend, frontend, and integration work.</p>
+        </header>
 
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3 class="project-title">Managementation</h3>
-          <p class="project-desc">A Rails-based task and project management app with team collaboration, real-time notifications, and CSV import/export.</p>
-          <p class="project-tech"><strong>Technologies:</strong> Ruby on Rails, PostgreSQL, React</p>
-        </article>
+        <section style="display:grid; gap:1rem;">
+            <div class="podcast-detail" aria-labelledby="projects-list-heading" style="padding:1rem;">
 
-        <article class="project-card">
-          <h3 class="project-title">Local Games Inventory</h3>
-          <p class="project-desc">E-commerce inventory system for a local game shop with trade-in workflow and admin reporting.</p>
-          <p class="project-tech"><strong>Technologies:</strong> Ruby on Rails, JavaScript, Stripe, Heroku</p>
-        </article>
+                    <div class="projects-grid" style="margin-top:0.75rem; display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem;">
+                        <article class="project-card" style="background:rgba(255,255,255,0.95); padding:1rem; border-radius:8px;">
+                                <h3 class="project-title" style="margin:0 0 0.5rem 0; color:#6a49a7;">Managementation</h3>
+                                <p class="project-desc" style="margin:0 0 0.75rem 0; color:#333;">A Rails-based task and project management app with team collaboration, real-time notifications, and CSV import/export.</p>
+                                <p class="project-tech" style="margin:0; color:#6a49a7;">Ruby on Rails, PostgreSQL, React</p>
+                        </article>
 
-        <article class="project-card">
-          <h3 class="project-title">PokéTeam Builder (Frontend)</h3>
-          <p class="project-desc">Client-oriented JavaScript app that uses the PokeAPI to build teams, demonstrating API consumption and DOM manipulation.</p>
-          <p class="project-tech"><strong>Technologies:</strong> JavaScript, HTML/CSS, PokeAPI</p>
-        </article>
-      </div>
+                        <article class="project-card" style="background:rgba(255,255,255,0.95); padding:1rem; border-radius:8px;">
+                                <h3 class="project-title" style="margin:0 0 0.5rem 0; color:#6a49a7;">Local Games Inventory</h3>
+                                <p class="project-desc" style="margin:0 0 0.75rem 0; color:#333;">E-commerce inventory system for a local game shop with trade-in workflow and admin reporting.</p>
+                                <p class="project-tech" style="margin:0; color:#6a49a7;"> Ruby on Rails, JavaScript</p>
+                        </article>
 
-      <p><a href="index.html" class="btn btn-secondary">Back to Home</a></p>
-    </section>
+                        <article class="project-card" style="background:rgba(255,255,255,0.95); padding:1rem; border-radius:8px;">
+                                <h3 class="project-title" style="margin:0 0 0.5rem 0; color:#6a49a7;">PokéTeam Builder (Frontend)</h3>
+                                <p class="project-desc" style="margin:0 0 0.75rem 0; color:#333;">Client-oriented JavaScript app that uses the PokeAPI to build teams, demonstrating API consumption and DOM manipulation.</p>
+                                <p class="project-tech" style="margin:0; color:#6a49a7;"> JavaScript, HTML/CSS, PokeAPI</p>
+                        </article>
+                    </div>
+
+                    <p style="margin-top:1rem;">
+                        <a class="back-link" href="index.html">← Back to Home</a>
+                    </p>
+            </div>
+        </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Charles Hopson — This is a Footer</p>
-    </div>
-  </footer>
+    <footer class="footer" style="margin-top:1.5rem;">
+            <div class="nav-container" style="justify-content:center;">
+                <p style="color:white; margin:0;">© 2025 Charles Hopson</p>
+            </div>
+    </footer>
 </body>
 </html>

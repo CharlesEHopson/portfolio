@@ -1,54 +1,72 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  
-  <title>Charles Hopson — Developer Portfolio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <title>Charles Hopson — Developer Portfolio</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand"><a href="index.html" class="brand-link">Biography</a></h1>
-      <nav class="main-nav">
-        <a class="nav-link" href="index.html">Home</a>
-        <a class="nav-link" href="about.html">About</a>
-        <a class="nav-link" href="work.html">Work</a>
-      </nav>
-    </div>
-  </header>
+    <header class="navbar" role="banner">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html" style="color:inherit; text-decoration:none;">Dev Portfolio</a></div>
+            <nav aria-label="Primary" role="navigation">
+                <ul class="nav-menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="work.html">Work</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <main class="container">
-    <section class="projects-grid">
-      <h2 class="intro-title">Charles Hopson</h2>
-      <p class="lead">Systems Engineer / Software Developer • Ruby on Rails, JavaScript, Python</p>
+    <main class="main-content" role="main">
 
-      <div class="contact">
-        <p><strong>Email:</strong> <a href="mailto:chopson1@memphis.edu">chopson1@memphis.edu</a></p>
-        <p><strong>Phone:</strong> (901) 330-1384</p>
-        <p><strong>Location:</strong> Memphis, TN</p>
-        <p class="social">
-          <strong>Social:</strong>
-          <a href="https://www.linkedin.com/in/charles-hopson/" target="_blank" rel="noopener">LinkedIn</a>
-          &nbsp;|&nbsp;
-          <a href="https://github.com/CharlesEHopson" target="_blank" rel="noopener">GitHub</a>
-        </p>
-      </div>
-    </section>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="intro-title">Charles Hopson</h1>
+            <p class="intro-text">Systems Engineer / Software Developer • HTML, JavaScript, Python</p>
 
-    <section class="summary">
-      <h3>Quick summary</h3>
-      <p>I'm a software developer with experience building and adjusting code using Ruby on Rails, moderate JavaScript, but a lot more experience with Python. I am a task-oriented person and am able to function at my peak with a concrete goal in mind.</p>
-      <p style="margin-top: 1rem;"><a href="work.html" class="btn btn-primary">See my projects</a>
-      <a href="about.html" class="btn btn-secondary">About me</a></p>
-    </section>
-  </main>
+            <div style="margin-top:1.25rem; display:flex; flex-wrap:wrap; gap:1rem; justify-content:center; color:white; font-weight:600;">
+                <div style="min-width:220px;">
+                    <p style="margin:0;"><strong>Email:</strong> <a href="mailto:chopson1@memphis.edu" style="color:inherit; text-decoration:underline;">chopson1@memphis.edu</a></p>
+                </div>
+                <div style="min-width:160px;">
+                    <p style="margin:0;"><strong>Phone:</strong> (901) 330-1384</p>
+                </div>
+                <div style="min-width:160px;">
+                    <p style="margin:0;"><strong>Location:</strong> Memphis, TN</p>
+                </div>
+                <div style="min-width:220px;">
+                    <p style="margin:0;"><strong>Social:</strong>
+                        <a href="https://www.linkedin.com/in/charles-hopson/" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">LinkedIn</a>
+                        &nbsp;|&nbsp;
+                        <a href="https://github.com/CharlesEHopson" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline;">GitHub</a>
+                    </p>
+                </div>
+            </div>
+        </section>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 Charles Hopson — This is a Footer</p>
-    </div>
-  </footer>
+        <section class="podcast-detail" aria-labelledby="summary-heading">
+            <h2 id="summary-heading" class="page-heading" style="margin-top:0;">Quick summary</h2>
+            <p style="margin-top:0.5rem;">
+                I'm a software developer with experience building and adjusting code using CSS, HTML,
+                moderate JavaScript, but a lot more experience with Python. I'm task-oriented and am 
+                able to function at my peak with a concrete goal in mind.
+            </p>
+
+            <div style="margin-top:1rem; justify-content:center;">
+                <a class="back-link" href="work.html" class="btn btn-primary" style="text-decoration:none;">See my projects</a> |
+                <a class="back-link" href="about.html" class="btn btn-secondary" style="text-decoration:none;">About me</a> 
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo" style="margin-top:1.5rem;">
+        <div class="nav-container" style="justify-content:center;">
+            <p style="color:white; margin:0;">© 2025 Charles Hopson</p>
+        </div>
+    </footer>
+
 </body>
 </html>
